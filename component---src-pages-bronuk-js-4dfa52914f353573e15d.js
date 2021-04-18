@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[428],{2267:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return u}});var n=l(7294),r=l(6823);function u(){return n.createElement(r.Z,null,n.createElement("div",null,n.createElement("h2",null,"Bron"),n.createElement("p",null,"Tekst voor de bron.")))}}}]);
+//# sourceMappingURL=component---src-pages-bronuk-js-4dfa52914f353573e15d.js.map

@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[737],{2549:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return u}});var n=l(7294),r=l(6823);function u(){return n.createElement(r.Z,null,n.createElement("div",null,n.createElement("h2",null,"Activiteiten"),n.createElement("p",null,"Tekst voor samen.")))}}}]);
+//# sourceMappingURL=component---src-pages-activiteiten-js-02e052b5127075b246b1.js.map

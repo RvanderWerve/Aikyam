@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[422],{2790:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return u}});var n=l(7294),r=l(6823);function u(){return n.createElement(r.Z,null,n.createElement("div",null,n.createElement("h2",null,"Doneren"),n.createElement("p",null,"Tekst voor samen.")))}}}]);
+//# sourceMappingURL=component---src-pages-doneer-js-6ba19ee8ff6d4dbf79ae.js.map

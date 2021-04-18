@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[975],{3237:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return c}});var l=n(7294),r=n(6823),a=n(5444);function c(){var e=(0,a.K2)("3912211197").contents.pageBy,t=e.content,n=e.title;return l.createElement(r.Z,null,l.createElement("div",{className:"main-container"},l.createElement("h2",null,n),l.createElement("article",{dangerouslySetInnerHTML:{__html:t}}),"       "))}}}]);
+//# sourceMappingURL=component---src-pages-missieuk-js-afb59ce72f9a5e2066c7.js.map
