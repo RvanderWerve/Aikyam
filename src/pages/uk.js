@@ -9,7 +9,7 @@ import { BgImage } from "gbimage-bridge"
 
 
 
-export default function Home() {
+export default function Home_uk() {
   const { placeholderImage, contents } = useStaticQuery(
     graphql`
       query {
@@ -24,7 +24,7 @@ export default function Home() {
           }
         }
         contents: wpgraphql { 
-          pageBy(id: "cG9zdDozNA==") {
+          pageBy(id: "cG9zdDo2Ng==") {
             content
             title
           }
@@ -55,7 +55,7 @@ const styleFront = {
           </div>
           <div className="homeText">
 <div className="frontText">
-<article lang="nl" dangerouslySetInnerHTML={{__html: content}}></article>
+<article lang="en" dangerouslySetInnerHTML={{__html: content}}></article>
 </div>
           {/* <div className="frontText" dangerouslySetInnerHTML={{__html: content}}></div> */}
 

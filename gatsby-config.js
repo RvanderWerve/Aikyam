@@ -6,5 +6,24 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+         {
+           resolve: 'gatsby-source-graphql',
+           options: {
+             typeName: 'WPGraphQL',
+             fieldName: 'wpgraphql',
+             url: 'http://localhost//index.php?graphql',
+           }
+         },
+         `gatsby-transformer-sharp`, 
+         `gatsby-plugin-sharp`
+       ],
+       pathPrefix: "/Aikyam",
 }

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: rgb(148, 148, 148);
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  
+}
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+
+/* layout & nav */
+.layout {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+nav {
+    background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background-repeat: no-repeat;
+  display: flex;
+  /* grid-template-columns: 100px auto 100px; */
+  margin: 0px auto;
+  padding: 10px ;
+}
+nav .margin-0{
+    margin-left: 0;
+    margin-right: 0;
+}
+nav .links {
+  display: inline-block;
+  text-align: center;
+  /* padding: 15px 0 8px 0; */
+}
+nav .link{
+    padding: 2px 0 0 0;
+}
+
+.flag {
+    margin-left: 2px;
+}
+#flag-div{
+    margin-left: auto;
+    margin-right: auto;
+}
+nav .dropdowns {
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 0.8px 0 0px 0;
+  color: rgb(243, 220, 245);
+}
+nav .dropdowns a{
+  /* margin-left: 20px; */
+  /* padding: 11px 0 4px 0; */
+
+  /* font-weight: 400; */
+  /* padding-bottom: 8px; */
+  color: rgb(243, 220, 245);
+}
+nav .dropdowns a:hover{
+    color: rgb(255, 255, 255);
+    /* text-decoration: none; */
+    /* padding: 11px 0 4px 0; */
+}
+/* nav .dropdowns a:active{
+    /* background-color: rgb(243, 236, 250);
+    color: rebeccapurple; 
+    text-decoration: none;
+    padding: 11px 0 4px 0;
+}
+ */
+nav .drop-item{
+    text-align: center;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+
+}
+nav .drop-item a{
+    background-color: rgb(255, 255, 255);
+    color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+}
+nav .drop-item a:hover{
+    /* background-color: rgb(243, 236, 250); */
+    color: rgb(89, 24, 155);
+    margin: 0;
+    padding: 0;
+}
+
+nav .active {
+    background-color: white;
+    color: rebeccapurple;
+    padding: 4px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+nav a {
+  display: inline-block;
+
+  /* font-weight: 400; */
+  /* padding-bottom: 8px; */
+  color: rgb(243, 220, 245);
+  /* border-bottom: 3px solid transparent; */
+}
+nav a:hover {
+  /* border-color: white; */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav .rightpart{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    /* flex-direction: row; */
+}
+nav .link-doneer{
+    margin-left: auto;
+    margin-right: auto;
+}
+nav .doneer-text:hover{
+    color: rgba(255, 217, 0, 0.808);
+}
+nav .doneer{
+    
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+nav .doneer-image{
+    text-align: center;
+}
+nav .doneer-text{
+    color: whitesmoke;
+    text-align: left;
+}
+nav .doneer-active{
+    background-color: rgb(164, 64, 235);
+    padding: 0 2px;
+}
+nav .col-pad-0{
+    padding: 0;
+}
+.newsform{
+    margin: 15px;
+}
+.newsbutton{
+margin: 8px ;
+text-align: center;
+}
+footer .signup-button{
+    margin-top: 14px;
+}
+footer{
+    text-align: center;
+ margin-top: 12px;
+}
+.form-text{
+    color: #bbb;
+}
+footer p{
+  text-align: center;
+  color: #bbb;
+}
+footer img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 8px 12px 8px;
+}
+
+.bg {
+    min-height: 80vh;
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .homeText{
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      position: relative;
+
+  }
+.frontLogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 77%;
+    max-width: 280px;
+    position: absolute;
+  top: 0%;
+  right: 12%;
+    filter: drop-shadow(2px 2px 2px #caade6)
+    saturate(2);
+    -webkit-filter: drop-shadow(2px 2px 2px #20142b)
+    saturate(2);
+     }
+
+.frontText {
+    background-color: rgba(199, 185, 224, 0);
+    color: white;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    bottom: -1250%;
+    left: 5%;
+    
+}
+.frontText p{
+    color: white;
+    filter: drop-shadow(2px 2px 2px #20142b);
+    -webkit-filter: drop-shadow(2px 2px 2px #180827);
+    /* position: inherit; */
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    width: 90%;
+}
+
+.main-container{
+    min-height: 400px;
+
+}
+.main-container h2{
+    text-align: center;
+    margin: 10px auto;
+}
