@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[60],{7448:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return u}});var r=l(7294),n=l(419);function u(){return r.createElement(n.Z,null,r.createElement("div",null,r.createElement("h2",null,"Together"),r.createElement("p",null,"Tekxt voor together.")))}}}]);
+//# sourceMappingURL=component---src-pages-samenuk-js-81b296cf525ff823d57f.js.map
