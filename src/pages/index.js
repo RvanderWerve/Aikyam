@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from 'gatsby'
-import { getImage } from "gatsby-plugin-image"
+// import { getImage } from "gatsby-plugin-image"
 
-import { BgImage } from "gbimage-bridge"
+// import { BgImage } from "gbimage-bridge"
 // import BackgroundImage from 'gatsby-background-image'
 
 
@@ -27,12 +27,10 @@ export default function Home() {
       
     `
   )
-  const pluginImage = getImage(placeholderImage);
 
   return (
 
   <Layout>
-     <BgImage image={pluginImage} className="bg"
       Tag="section"
       >
         <div className="homeText">
@@ -52,7 +50,6 @@ export default function Home() {
 
              </div>
           
-    </BgImage>
         </Layout>
   )
 }
