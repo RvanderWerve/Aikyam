@@ -10,7 +10,7 @@ import { BgImage } from "gbimage-bridge"
 
 
 export default function Home_uk() {
-  const { placeholderImage, contents } = useStaticQuery(
+  const { placeholderImage } = useStaticQuery(
     graphql`
       query {
         placeholderImage: file(relativePath: {eq: "Aikyam bg landscape.jpeg"}) {
@@ -23,24 +23,13 @@ export default function Home_uk() {
             )
           }
         }
-        contents: wpgraphql { 
-          pageBy(id: "cG9zdDo2Ng==") {
-            content
-            title
-          }
-        }
       }
       
     `
   )
   const pluginImage = getImage(placeholderImage);
-const {content, title} = contents.pageBy;
-console.log("contents is: " +JSON.stringify(contents));
-console.log("content is: " +content);
 
-const styleFront = {
-  color: 'white',
-};
+
   return (
 
   <Layout>
@@ -49,13 +38,17 @@ const styleFront = {
       >
         <div className="homeText">
           <div className="frontLogo">
-            <img src="/Aikyam final.png" alt=""/>
+            <img src="Aikyam final.png" alt=""/>
           
           </div>
           </div>
-          <div className="homeText">
+          <div className="homeText bg">
 <div className="frontText">
-<article lang="en" dangerouslySetInnerHTML={{__html: content}}></article>
+<article><p>
+Aikyam is a Dutch foundation. Our work focuses on creating a healthy, 
+happy and peaceful society regardless of nationality, race, creed or social 
+position, with unity, tolerance and harmony at the heart.
+  </p></article>
 </div>
           {/* <div className="frontText" dangerouslySetInnerHTML={{__html: content}}></div> */}
 

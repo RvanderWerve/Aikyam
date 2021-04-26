@@ -1,8 +1,7 @@
-import { Link } from 'gatsby'
-import React from 'react'
+import { Link, parsePath } from 'gatsby';
+import React from 'react';
 import { navigate } from 'gatsby';
-import { Location } from "@reach/router"
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Dropdown, NavItem, NavLink} from "react-bootstrap";
+import {Navbar, Nav, Dropdown} from "react-bootstrap";
 
 
 let language = '';
@@ -13,7 +12,7 @@ let activiteiten = 'Activiteiten';
 let nieuws = 'Nieuws';
 let contact = 'Contact';
 let doneer = 'DONEER'
-let pathname = '/';
+// let pathname = parsePath;
 
 
 
@@ -22,6 +21,7 @@ let pathname = '/';
 
 
 export default function Header({setUk, setNl}) {
+
     const handleClickNl =(e)=>{
         e.preventDefault();
     language = '';
@@ -48,8 +48,13 @@ export default function Header({setUk, setNl}) {
     navigate (`/${language}`);
     }
     // const pathname = globalHistory.location.pathname;
+    const ListLink = props => (
+        <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+          <Link to={props.to}>{props.children}</Link>
+        </li>
+      )
     return (
-<Navbar collapseOnSelect expand="md" bg="dark" variant="dark" >
+<Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="">
   <Navbar.Brand className='col col-pad-0' href={`/${language}`}><img src="Aikyam final white sm.png" alt="Aikyam logo" height="60"/></Navbar.Brand>
   <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -70,13 +75,19 @@ export default function Header({setUk, setNl}) {
           <Nav.Item as="li" className="links">
             <Link className="link" to={`/activiteiten${language}`} activeClassName="active btn">{activiteiten}</Link>
           </Nav.Item>
+          <Nav.Item as="li" className="links">
+            <Link className="link" to={`/nieuws${language}`} activeClassName="active btn">{nieuws}</Link>
+          </Nav.Item>
+          
+          {/* 
+          //dropdown menu
           <Dropdown className="dropdowns btn">
           <Dropdown.Toggle as="a" className="dropdowns">{nieuws}</Dropdown.Toggle>
             <Dropdown.Menu className="dropdown-menu-right">
                <Link className="drop-item " to={`/missie${language}`} ><Dropdown.Item as="li" className="drop-item btn ">{missie}</Dropdown.Item></Link>
                 <Link className="drop-item " to={`/bron${language}`} ><Dropdown.Item as="li" className="drop-item btn "> {bron}</Dropdown.Item></Link>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown> */}
           <Nav.Item as="li" className="links">
             <Link className="link" to={`/contact${language}`} activeClassName="active btn">{contact}</Link>
           </Nav.Item>
@@ -84,7 +95,7 @@ export default function Header({setUk, setNl}) {
     </Nav>
     <Nav as="ul" className="rightpart col-md-2">
         <Link className="link-doneer" to={`/doneer${language}`} activeClassName="doneer-active btn">
-    <Nav.Item as="li" className="doneer"><img className="doneer-image" src="../flower Aikyam icon.png" height="22px"/>
+    <Nav.Item as="li" className="doneer"><img className="doneer-image" src="flower Aikyam icon.png" height="22px"/>
     <div className="doneer-text">{doneer} </div></Nav.Item></Link>
     <Nav as="ul" id='flag-div'>
       <Nav.Item as="li" className="links flag">
@@ -98,20 +109,7 @@ export default function Header({setUk, setNl}) {
   </Navbar.Collapse>
 </Navbar>
 
-    //    <nav>
-    //        <img src="Aikyam final white sm.png" alt="Aikyam logo" height="60"/>
-    //        <div className="links">
-    //            <ul>
-    //            <li><Link to={`/${language}`} activeClassName="active">Home</Link></li>
-    //            <li><Link to={`/missie${language}`} activeClassName="active">{missie}</Link></li>
-    //            <li><Link to={`/bron${language}`} activeClassName="active">{bron}</Link></li>
-    //            </ul>
-    //            </div>
-    //            <div className="links"> 
-    //            <input type="image" src="nl-flag.png" alt="Submit" onClick={ handleClickNl }></input>
-    //            <input type="image" src="uk-flag.png" alt="Submit" onClick={handleClickUk}></input>
-    //             </div>
-    //    </nav>
+    
        
     )
 }

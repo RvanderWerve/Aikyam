@@ -223,12 +223,13 @@ footer img{
 .frontText {
     background-color: rgba(199, 185, 224, 0);
     color: white;
-    display: block;
-    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    /* position: absolute; */
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    bottom: -1250%;
+    /* bottom: -1250%; */
     left: 5%;
     
 }
@@ -237,11 +238,11 @@ footer img{
     filter: drop-shadow(2px 2px 2px #20142b);
     -webkit-filter: drop-shadow(2px 2px 2px #180827);
     /* position: inherit; */
-    word-wrap: break-word;
+    /* word-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto;
+    hyphens: auto; */
     width: 90%;
 }
 

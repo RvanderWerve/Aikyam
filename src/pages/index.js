@@ -23,24 +23,12 @@ export default function Home() {
             )
           }
         }
-        contents: wpgraphql { 
-          pageBy(id: "cG9zdDozNA==") {
-            content
-            title
-          }
-        }
       }
       
     `
   )
   const pluginImage = getImage(placeholderImage);
-const {content, title} = contents.pageBy;
-console.log("contents is: " +JSON.stringify(contents));
-console.log("content is: " +content);
 
-const styleFront = {
-  color: 'white',
-};
   return (
 
   <Layout>
@@ -49,14 +37,18 @@ const styleFront = {
       >
         <div className="homeText">
           <div className="frontLogo">
-            <img src="/Aikyam final.png" alt=""/>
+            <img src="Aikyam final.png" alt=""/>
           
           </div>
           </div>
-          <div className="homeText">
+          <div className="homeText bg">
 <div className="frontText">
-<article lang="nl" dangerouslySetInnerHTML={{__html: content}}></article>
-</div>
+<article><p className="frontText"> Aikyam is een Nederlandse stichting. Ons werk richt zich op het creëren van een gezonde,
+   blije en vreedzame samenleving, met ruimte voor alle nationaliteiten, rassen, geloofsovertuigingen
+    en sociale posities, waarin verbinding,
+   tolerantie en harmonie centraal staan.</p></article>
+   </div>
+
           {/* <div className="frontText" dangerouslySetInnerHTML={{__html: content}}></div> */}
 
              </div>
