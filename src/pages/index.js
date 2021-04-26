@@ -42,7 +42,10 @@ export default function Home() {
       Tag="section"
       {...bgImage}
       preserveStackingContext
-      >
+      >`
+       <div style={{minHeight: 1000, minWidth: 1000}}>
+        <GatsbyImage image={image} alt={"testimage"}/>
+      </div>`
         <div className="homeText">
           <div className="frontLogo">
             <img src="Aikyam final.png" alt=""/>
