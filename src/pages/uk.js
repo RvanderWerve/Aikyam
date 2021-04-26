@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from "gatsby-plugin-image"
@@ -50,7 +50,6 @@ happy and peaceful society regardless of nationality, race, creed or social
 position, with unity, tolerance and harmony at the heart.
   </p></article>
 </div>
-          {/* <div className="frontText" dangerouslySetInnerHTML={{__html: content}}></div> */}
 
              </div>
           

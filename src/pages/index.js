@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import Layout from "../components/Layout"
 import { graphql, useStaticQuery } from 'gatsby'
 import { getImage } from "gatsby-plugin-image"
@@ -49,7 +49,6 @@ export default function Home() {
    tolerantie en harmonie centraal staan.</p></article>
    </div>
 
-          {/* <div className="frontText" dangerouslySetInnerHTML={{__html: content}}></div> */}
 
              </div>
           
