@@ -5,25 +5,13 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 export default function MissieUk() {
 
-    const { contents } = useStaticQuery(
-        graphql`
-          query {
-            contents: wpgraphql { 
-              pageBy(id: "cG9zdDo3MA==") {
-                content
-                title
-              }
-            }
-          }
-          
-        `
-      )
-    const {content, title} = contents.pageBy;
-    return (
-        <Layout>
-        <div className="main-container">
-           <h2 >{title}</h2> 
-<article dangerouslySetInnerHTML={{__html: content}} ></article>       </div>
-        </Layout>
-    )
+   
+  return (
+    <Layout>
+    <div>
+        <h2>Mission</h2>
+        <p>Tekst voor missie uk versie.</p>
+    </div>
+    </Layout>
+)
 }
