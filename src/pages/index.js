@@ -5,6 +5,9 @@ import { getImage } from "gatsby-plugin-image"
 
 import { BgImage } from "gbimage-bridge"
 // import BackgroundImage from 'gatsby-background-image'
+import { convertToBgImage } from "gbimage-bridge"
+import BackgroundImage from 'gatsby-background-image'
+
 
 
 
@@ -27,13 +30,18 @@ export default function Home() {
       
     `
   )
-  const pluginImage = getImage(placeholderImage);
+  // const pluginImage = getImage(placeholderImage);
+  const image = getImage(placeholderImage)
 
+  // Use like this:
+  const bgImage = convertToBgImage(image)
   return (
 
   <Layout>
-     <BgImage image={pluginImage} className="bg"
+     <BackgroundImage className="bg"
       Tag="section"
+      {...bgImage}
+      preserveStackingContext
       >
         <div className="homeText">
           <div className="frontLogo">
@@ -52,7 +60,7 @@ export default function Home() {
 
              </div>
           
-    </BgImage>
+    </BackgroundImage>
         </Layout>
   )
 }
