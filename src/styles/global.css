@@ -169,26 +169,47 @@ text-align: center;
 }
 footer .signup-button{
     margin-top: 14px;
+    margin-left: 10px;
+    margin-right: -10px;
+align-content: flex-start;
+text-align: left;
 }
 footer{
     text-align: center;
- margin-top: 12px;
+ padding-top: 20px;
 }
 .form-text{
     color: #bbb;
 }
+.form-width{
+    width: auto;
+}
 footer p{
   text-align: center;
-  color: #bbb;
+  color: white;
 }
 footer img{
     margin-left: auto;
     margin-right: auto;
     padding: 12px 8px 12px 8px;
 }
+.foot{
+    background-color: #6c757d;
+}
+
+.bgMain {
+    min-height: 60vh;
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
 .bg {
-    min-height: 80vh;
+    min-height: 110vh;
     width: 100%;
   
     /* Center and scale the image nicely */
@@ -201,23 +222,27 @@ footer img{
   .homeText{
       display: flex;
       align-items: center;
-      padding: 1rem;
+      /* padding: 1rem; */
       position: relative;
 
   }
-.frontLogo img{
-    display: block;
+.frontLogo {
+    display: flex;
+justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 77%;
-    max-width: 280px;
-    position: absolute;
+    width: 50%; 
+    
+    /* position: absolute; */
   top: 0%;
-  right: 12%;
-    filter: drop-shadow(2px 2px 2px #caade6)
-    saturate(2);
-    -webkit-filter: drop-shadow(2px 2px 2px #20142b)
-    saturate(2);
+  /* left: 25%; */
+       }
+
+     .frontLogo img{
+        max-width: 250px;
+        filter: saturate(2);
+        -webkit-filter: saturate(2);
+    
      }
 
 .frontText {
@@ -225,10 +250,11 @@ footer img{
     color: white;
     display: flex;
     align-self: flex-end;
+    text-align: center;
     /* position: absolute; */
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 62%;
     /* bottom: -1250%; */
     left: 5%;
     
@@ -237,14 +263,130 @@ footer img{
     color: white;
     filter: drop-shadow(2px 2px 2px #20142b);
     -webkit-filter: drop-shadow(2px 2px 2px #180827);
-    /* position: inherit; */
-    /* word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; */
     width: 90%;
 }
+.genHeading {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    padding-top: 10vh;
+}
+.genHeading h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 10vmax;
+   }
+.actHeading {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    padding-top: 40vh;
+}
+.actHeading h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 8vmax;
+   }
+.missieHeading {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    padding-top: 14vh;
+}
+.missieHeading h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+   }
+.nieuwsHeading {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    padding-top: 30vh;
+    padding-left: 20%;
+}
+.nieuwsHeading h1{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 8vmax;
+   }
+.contactHeading {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    padding-top: 42vh;
+    padding-left: 20%;
+}
+.contactHeading h1{
+    display: flex;
+    color: rgb(243, 223, 109);
+    font-size: 8vmax;
+   }
+
+.genText{
+padding: 16px;
+}
+.genText h3{
+    margin-top: 36px;
+    font-size: 24px;
+}
+.genText a{
+    display: inline-block;
+    color: inherit;
+    text-decoration: underline;
+}
+.missionText{
+    width: 80%;
+    margin: 40px auto;
+    padding: 10px;
+    /* margin: 0px auto; */
+    text-align: center;
+      background: 
+      
+      linear-gradient(#ccc , #ccc)top right/ 15% 2px,
+      linear-gradient(#ccc , #ccc)top left/ 30% 2px,
+      linear-gradient(#ccc , #ccc)bottom left/ 20% 2px,
+      linear-gradient(#ccc , #ccc)bottom right/ 25% 2px,
+      linear-gradient(#ccc, #ccc) left/ 2px 100%,
+      linear-gradient(#ccc, #ccc) right / 2px 100%,
+      #fff;
+      /* border-radius: 10px; */
+     background-repeat:no-repeat;
+}
+
+@media screen and (max-width: 424px) {
+        /* start of phone styles */
+        
+            .quoteText{
+                width: 94%;
+            }
+        }
+        
+@media screen and (min-width: 425px){
+.quoteText{
+    width: 380px;
+}
+}
+        
+
+.quoteText {
+  padding: 10px;
+  margin: 0px auto;
+  text-align: center;
+  font-style: italic;
+ 
+}
+
 
 .main-container{
     min-height: 400px;
@@ -254,3 +396,10 @@ footer img{
     text-align: center;
     margin: 10px auto;
 }
+
+.centerImage{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+

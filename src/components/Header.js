@@ -99,10 +99,10 @@ export default function Header({setUk, setNl}) {
     <div className="doneer-text">{doneer} </div></Nav.Item></Link>
     <Nav as="ul" id='flag-div'>
       <Nav.Item as="li" className="links flag">
-        <input type="image" src="nl-flag.png" height="15px" alt="Submit" onClick={ handleClickNl }></input>
+        <input type="image" src="nl-flag.png" height="15px" alt="NL" onClick={ handleClickNl }></input>
       </Nav.Item>
       <Nav.Item as="li" className="links flag">
-        <input type="image" src="uk-flag.png" height="15px" alt="Submit" onClick={handleClickUk}></input>
+        <input type="image" src="uk-flag.png" height="15px" alt="EN" onClick={handleClickUk}></input>
       </Nav.Item>
     </Nav>
     </Nav>
