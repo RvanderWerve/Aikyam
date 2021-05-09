@@ -16,6 +16,5 @@ module.exports = {
     },
          `gatsby-transformer-sharp`, 
          `gatsby-plugin-sharp`,
-       ],
-       pathPrefix: "/Aikyam",
+       ], pathPrefix: "/Aikyam",
 }
