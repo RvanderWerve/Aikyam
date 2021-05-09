@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[603],{7042:function(e,t,l){"use strict";l.r(t),l.d(t,{default:function(){return a}});var n=l(7294),r=l(419);function a(){return n.createElement(r.Z,null,n.createElement("div",null,n.createElement("h2",null,"Samen"),n.createElement("p",null,"Tekst voor samen.")))}}}]);
-//# sourceMappingURL=component---src-pages-samen-js-f4ca48e9c6a670885056.js.map
