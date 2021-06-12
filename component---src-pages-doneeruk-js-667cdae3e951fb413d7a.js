@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[443],{686:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return a}});var l=n(7294),r=n(6823);function a(){return l.createElement(r.Z,null,l.createElement("div",null,l.createElement("h2",null,"Donating"),l.createElement("p",null,"Text for donating page.")))}}}]);
-//# sourceMappingURL=component---src-pages-doneeruk-js-667cdae3e951fb413d7a.js.map
